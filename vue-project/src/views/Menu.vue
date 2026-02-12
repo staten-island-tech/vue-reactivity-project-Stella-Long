@@ -4,6 +4,11 @@
         <h2>{{ count }}</h2>
         <button @click="increment">add to cart</button>
     </div>
+    <div class="container">
+    <DrinksCard v-for="drink in drinks" :key="drink.name" :drink="drink">{{
+      drink.name
+    }}</DrinksCard>
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -12,6 +17,12 @@ const count = ref(0)
 function increment() {
     count.value++
 }
+import DrinksCard from '@/components/Drinks.vue'
+const drinks = ref([
+  { name: 'Jasmine Latte', img: ''},
+  { name: 'Coconut Mango Boom', img: '' },
+  { name: 'Triple Matcha Supreme', img: '' },
+])
 </script>
 
 <style scoped>
