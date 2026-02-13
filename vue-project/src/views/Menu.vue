@@ -19,9 +19,9 @@ function increment() {
 }
 import DrinksCard from '@/components/Drinks.vue'
 const drinks = ref([
-  { name: 'Jasmine Latte', img: ''},
-  { name: 'Coconut Mango Boom', img: '' },
-  { name: 'Triple Matcha Supreme', img: '' },
+  { name: 'Jasmine Latte', price: '', img: ''},
+  { name: 'Coconut Mango Boom', price: '', img: ''},
+  { name: 'Triple Matcha Supreme', price: '$7.99', img: '' },
 ])
 </script>
 
@@ -30,6 +30,7 @@ const drinks = ref([
     width: 200px;
 }
 .container {
+    color:rgb(231, 225, 218) ;
     display: flex;
     flex-direction: column;
     align-items: center;
