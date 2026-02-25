@@ -19,8 +19,8 @@ function increment() {
 }
 import DrinksCard from '@/components/Drinks.vue'
 const drinks = ref([
-  { name: 'Jasmine Latte', price: '', img: ''},
-  { name: 'Coconut Mango Boom', price: '', img: ''},
+  { name: 'Jasmine Latte', price: '$6.49', img: 'https://heyteamenu.com/wp-content/uploads/2025/07/101cc4e9-9568-44e1-b337-f2ea44cf8182-f89c8f48-3f71-486a-815f-da7412ab3d55-retina-large-1024x1024.jpg'},
+  { name: 'Coconut Mango Boom', price: '$7.49', img: ''},
   { name: 'Triple Matcha Supreme', price: '$7.99', img: '' },
 ])
 </script>
