@@ -13,8 +13,9 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
+const cart = ref([])
 function addToCart(drink) {
-  console.log(drink)
+  cart.value.push(drink)
 }
 const drinks = ref([
   {name: 'Jasmine Latte', price: '$6.49'},
@@ -22,7 +23,6 @@ const drinks = ref([
   {name: 'Triple Matcha Supreme', price: '$7.99' },
   {name: 'GrapefruitBoom', price: '$7.49'},
   {name: 'Crispy Grape', price: '$7.49'},
-
 ])
 </script>
 
