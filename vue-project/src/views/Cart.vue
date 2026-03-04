@@ -8,7 +8,7 @@
   </div>
   <h2>Cart</h2>
   <p v-if="cart.length === 0">empty</p>
-  
+  <p v-else="cart.length === ">{{ drink.name }}</p>  
 </template>
 
 <script setup lang="ts">
@@ -18,14 +18,13 @@ function addToCart(drink) {
   cart.value.push(drink)
 }
 const drinks = ref([
-  {name: 'Jasmine Latte', price: '$6.49'},
-  {name: 'Coconut Mango Boom', price: '$7.49'},
-  {name: 'Triple Matcha Supreme', price: '$7.99' },
-  {name: 'GrapefruitBoom', price: '$7.49'},
-  {name: 'Crispy Grape', price: '$7.49'},
+  {name: 'Jasmine Latte', price: '6.49'},
+  {name: 'Coconut Mango Boom', price: '7.49'},
+  {name: 'Triple Matcha Supreme', price: '7.99' },
+  {name: 'Grapefruit Boom', price: '7.49'},
+  {name: 'Crispy Grape', price: '7.49'},
 ])
 </script>
 
 <style scoped>
-
 </style>
