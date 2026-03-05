@@ -5,10 +5,14 @@
     <div v-for="drink in drinks" :key="drink.name">
       <p>{{ drink.name }} - ${{ drink.price }}</p>
       <button @click="addToCart(drink)">add to cart</button>
+
   </div>
   <h2>Cart</h2>
-  <p v-if="cart.length === 0">empty</p>
-  <p v-else="cart.length === ">{{ drink.name }}</p>  
+  <p v-if="cart.length === 0">empty</p> 
+  <p v-else="drink in drinks" :key="drink.name">
+    <p>{{ drink.name }} - ${{ drink.price }}</p>
+      <button @click="addToCart(drink)">add to cart</button>
+  </p>
 </template>
 
 <script setup lang="ts">
@@ -18,11 +22,11 @@ function addToCart(drink) {
   cart.value.push(drink)
 }
 const drinks = ref([
-  {name: 'Jasmine Latte', price: '6.49'},
-  {name: 'Coconut Mango Boom', price: '7.49'},
-  {name: 'Triple Matcha Supreme', price: '7.99' },
-  {name: 'Grapefruit Boom', price: '7.49'},
-  {name: 'Crispy Grape', price: '7.49'},
+  {id: 1, name: 'Jasmine Latte', price: '6.49'},
+  {id: 2, name: 'Coconut Mango Boom', price: '7.49'},
+  {id: 3, name: 'Triple Matcha Supreme', price: '7.99' },
+  {id: 4, name: 'Grapefruit Boom', price: '7.49'},
+  {id: 5, name: 'Crispy Grape', price: '7.49'},
 ])
 </script>
 
