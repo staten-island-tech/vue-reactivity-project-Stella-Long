@@ -1,9 +1,9 @@
 <template>
   <div>
-    <RouterView />
+    <Cart />
   </div>
 </template>
 
-<script setup></script>
-
-<style scoped></style>
+<script setup>
+import Cart from './components/Cart.vue'
+</script>
