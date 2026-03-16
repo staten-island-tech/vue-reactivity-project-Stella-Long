@@ -1,4 +1,28 @@
 <template>
+  <div class="shop">
+    <div class="title">
+      HEYTEA Menu
+    </div>
+    <div class="menu">
+      <div 
+        class="drink"
+        v-for="drink in drinks"
+        :key="drink.name"
+        >
+        <img
+          class="img"
+          :src="drink.img"
+          :alt="drink.name"
+        />
+        <div class="name">
+          {{ drink.name }}
+        </div>
+        <div class="price">
+
+        </div>
+      </div>
+    </div>
+  </div>
     <div>
         <h1>Menu</h1>
     </div>
@@ -22,11 +46,11 @@ function addToCart(drink) {
   cart.value.push(drink)
 }
 const drinks = ref([
-  {id: 1, name: 'Jasmine Latte', price: '6.49'},
-  {id: 2, name: 'Coconut Mango Boom', price: '7.49'},
-  {id: 3, name: 'Triple Matcha Supreme', price: '7.99' },
-  {id: 4, name: 'Grapefruit Boom', price: '7.49'},
-  {id: 5, name: 'Crispy Grape', price: '7.49'},
+  {id: 1, name: 'Jasmine Latte', price: '6.49', img: },
+  {id: 2, name: 'Coconut Mango Boom', price: '7.49', img: },
+  {id: 3, name: 'Triple Matcha Supreme', price: '7.99', img: },
+  {id: 4, name: 'Grapefruit Boom', price: '7.49', img:},
+  {id: 5, name: 'Crispy Grape', price: '7.49', img: },
 ])
 </script>
 
