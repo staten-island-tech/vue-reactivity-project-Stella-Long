@@ -57,9 +57,11 @@
 
       </div>
 
-    </div>
 
   </div>
+  <h2>Cart</h2>
+  <p v-if="cart.length === 0">empty</p> 
+  <p v-else ></p>
 </template>
 
 <script setup lang="ts">
@@ -72,36 +74,11 @@ function addToCart(drink) {
 }
 
 const drinks = ref([
-  {
-    id: 1,
-    name: 'Jasmine Latte',
-    price: 6.49,
-    img: '/src/assets/jasmine.jpg'
-  },
-  {
-    id: 2,
-    name: 'Coconut Mango Boom',
-    price: 7.49,
-    img: '/src/assets/mango.jpg'
-  },
-  {
-    id: 3,
-    name: 'Triple Matcha Supreme',
-    price: 7.99,
-    img: '/src/assets/matcha.jpg'
-  },
-  {
-    id: 4,
-    name: 'Grapefruit Boom',
-    price: 7.49,
-    img: '/src/assets/grapefruit.jpg'
-  },
-  {
-    id: 5,
-    name: 'Crispy Grape',
-    price: 7.49,
-    img: '/src/assets/grape.jpg'
-  }
+  {id: 1, name: 'Jasmine Latte', price: '6.49'},
+  {id: 2, name: 'Coconut Mango Boom', price: '7.49'},
+  {id: 3, name: 'Triple Matcha Supreme', price: '7.99' },
+  {id: 4, name: 'Grapefruit Boom', price: '7.49'},
+  {id: 5, name: 'Crispy Grape', price: '7.49'},
 ])
 </script>
 
